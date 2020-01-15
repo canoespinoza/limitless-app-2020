@@ -6,7 +6,7 @@ export default class Header extends Component {
     return(
       <View style={styles.header}>
         <View>
-          <Text></Text>
+          <Text>hey whats up hello world</Text>
         </View>
       </View>
     )
