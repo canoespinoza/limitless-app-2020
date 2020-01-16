@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Header } from './shared/header.jsx'
 
 export class Home extends Component {
   render() {
     return(
       <View style={styles.container}>
+
         <Text style={styles.boldText}>HOME</Text>
       </View>
     );
@@ -46,6 +48,8 @@ export class Profile extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    height: '100%',
+    width: '100%',
     flex: 1, 
     backgroundColor: '#fff',
     alignItems: 'center',
@@ -54,10 +58,10 @@ const styles = StyleSheet.create({
   boldText: {
     fontWeight: 'bold',
   },
-  header: {
-    width: '100%',
-    height: '60px',
-  }
+  // header: {
+  //   width: '100%',
+  //   height: '60px',
+  // }
 });
 
 const TabNavigator = createBottomTabNavigator ({
